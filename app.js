@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use('/', indexRouter);
-app.use('/api/v1/games', gamesRouter);
-app.use('/api/v1/scores', scoresRouter);
+app.use('/games', gamesRouter);
+app.use('/scores', scoresRouter);
 
 module.exports = app;
