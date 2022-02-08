@@ -9,7 +9,7 @@ module.exports = {
     dialect: "postgres",
   },
   production: {
-    use_env_variable: "HEROKU_POSTGRES_FÄRG_URL",
+    use_env_variable: "DATABASE_URL",
     dialectOptions: {
       ssl: {
         require: true,
